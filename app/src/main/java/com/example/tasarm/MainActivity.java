@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                         if (cursor.getCount() > 0){
                             Cursor cursor2 = db.rawQuery("SELECT * FROM person WHERE password = ?", new String[] {txtpassword.getText().toString()});
                             if (cursor2.getCount() > 0){
+                                Toast.makeText(MainActivity.this,"Giriş Başarılı",Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(MainActivity.this,MainActivity2.class);
                                 startActivity(intent);
                                 txtusername.setText("");

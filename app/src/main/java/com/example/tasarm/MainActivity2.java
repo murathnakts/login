@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -29,8 +28,8 @@ public class MainActivity2 extends AppCompatActivity {
                     case R.id.home:
                         getSupportFragmentManager().beginTransaction().replace(R.id.frag,new HomeFragment()).commit();
                         break;
-                    case R.id.search:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.frag,new SearchFragment()).commit();
+                    case R.id.shop:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frag,new ShopFragment()).commit();
                         break;
                     case R.id.person:
                         getSupportFragmentManager().beginTransaction().replace(R.id.frag,new PersonFragment()).commit();

@@ -5,9 +5,9 @@
         android:id="@+id/home"
         android:icon="@drawable/homeicon"
         />
-    <item android:title="Search"
-        android:id="@+id/search"
-        android:icon="@drawable/searchicon"/>
+    <item android:title="Shop"
+        android:id="@+id/shop"
+        android:icon="@drawable/shopicon"/>
     <item android:title="Person"
         android:id="@+id/person"
         android:icon="@drawable/personicon"

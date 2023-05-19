@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".PersonFragment"
-    android:background="#64DD17">
+    android:background="@color/purple_200"
+    tools:context=".ShopFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
@@ -48,8 +48,8 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="KULLANICI BİLGİLERİ"
-                android:textSize="30sp"
+                android:text="SEPETİM"
+                android:textSize="50sp"
                 android:textStyle="italic"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="10dp"
@@ -57,5 +57,4 @@
 
         </LinearLayout>
     </RelativeLayout>
-
 </FrameLayout>

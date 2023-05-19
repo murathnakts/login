@@ -6,433 +6,169 @@
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/shape1">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
 
-        <LinearLayout
-            android:id="@+id/images"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
 
-                <ImageView
-                    android:background="@color/white"
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/water"
-                    android:layout_weight="1.5"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="SU"
-                    android:textColor="@color/white"
-                    android:paddingStart="105dp"
-                    android:paddingTop="15dp"/>
+           <RelativeLayout
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginTop="0dp"
+               android:layout_marginStart="0dp"
+               android:background="@drawable/shape1">
+           </RelativeLayout>
 
-            </LinearLayout>
+           <RelativeLayout
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginTop="0dp"
+               android:layout_marginStart="0dp"
+               android:background="@drawable/shape2"/>
+       </LinearLayout>
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentTop="true">
 
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ekmek"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="FIRIN EKMEK"
-                    android:textColor="@color/white"
-                    android:paddingStart="45dp"
-                    android:paddingTop="15dp"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
 
-            </LinearLayout>
+               <TextView
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="FAST SHOP"
+                   android:textSize="50sp"
+                   android:textStyle="italic"
+                   android:layout_marginStart="0dp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/black"/>
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/waters"/>
 
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/biskuvi"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="BİSKÜVİ"
-                    android:textColor="@color/white"
-                    android:paddingStart="65dp"
-                    android:paddingTop="15dp"/>
+               <TextView
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Su Çeşitleri"
+                   android:textSize="45sp"
+                   android:textStyle="bold"
+                   android:layout_marginStart="0dp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/white"/>
 
-            </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/sebze"/>
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+               <TextView
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Meyve-Sebze"
+                   android:textSize="45sp"
+                   android:textStyle="bold"
+                   android:layout_marginStart="0dp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/white"/>
 
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/cikolata"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="ÇİKOLATA"
-                    android:textColor="@color/white"
-                    android:paddingStart="65dp"
-                    android:paddingTop="15dp"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/sarkuteri"/>
 
-            </LinearLayout>
+               <TextView
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Şarküteri"
+                   android:textSize="45sp"
+                   android:textStyle="bold"
+                   android:layout_marginStart="0dp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/white"/>
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/unlumamuller"/>
 
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/cips"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="CİPS"
-                    android:textColor="@color/white"
-                    android:paddingStart="95dp"
-                    android:paddingTop="15dp"/>
+               <TextView
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Unlu Mamüller"
+                   android:textSize="45sp"
+                   android:textStyle="bold"
+                   android:layout_marginStart="0dp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/white"/>
 
-            </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/icecekler"/>
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+               <TextView
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="İçecekler"
+                   android:textSize="45sp"
+                   android:textStyle="bold"
+                   android:layout_marginStart="0dp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/white"/>
 
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/kek"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="KEK"
-                    android:textColor="@color/white"
-                    android:paddingStart="95dp"
-                    android:paddingTop="15dp"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/tatlilar"/>
 
-            </LinearLayout>
+               <TextView
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Tatlılar"
+                   android:textSize="45sp"
+                   android:textStyle="bold"
+                   android:layout_marginStart="0dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="30dp"
+                   android:textColor="@color/white"/>
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/kola"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="KOLA"
-                    android:textColor="@color/white"
-                    android:paddingStart="85dp"
-                    android:paddingTop="15dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/fanta"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="FANTA"
-                    android:textColor="@color/white"
-                    android:paddingStart="85dp"
-                    android:paddingTop="15dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/domates"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="FIRIN EKMEK"
-                    android:textColor="@color/white"
-                    android:paddingStart="45dp"
-                    android:paddingTop="15dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/salatalik"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="FIRIN EKMEK"
-                    android:textColor="@color/white"
-                    android:paddingStart="45dp"
-                    android:paddingTop="15dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/biber"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="FIRIN EKMEK"
-                    android:textColor="@color/white"
-                    android:paddingStart="45dp"
-                    android:paddingTop="15dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/elma"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="FIRIN EKMEK"
-                    android:textColor="@color/white"
-                    android:paddingStart="45dp"
-                    android:paddingTop="15dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/portakal"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="FIRIN EKMEK"
-                    android:textColor="@color/white"
-                    android:paddingStart="45dp"
-                    android:paddingTop="15dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/erik"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="FIRIN EKMEK"
-                    android:textColor="@color/white"
-                    android:paddingStart="45dp"
-                    android:paddingTop="15dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ekmek"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="FIRIN EKMEK"
-                    android:textColor="@color/white"
-                    android:paddingStart="45dp"
-                    android:paddingTop="15dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_marginTop="10sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ekmek"
-                    android:layout_weight="1.5"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="25sp"
-                    android:layout_marginTop="30sp"
-                    android:text="FIRIN EKMEK"
-                    android:textColor="@color/white"
-                    android:paddingStart="45dp"
-                    android:paddingTop="15dp"/>
-
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
-
+           </LinearLayout>
+       </ScrollView>
+   </RelativeLayout>
 </FrameLayout>
