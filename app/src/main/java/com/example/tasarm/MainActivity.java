@@ -84,16 +84,11 @@ public class MainActivity extends AppCompatActivity {
         btnsign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // BURASI SONRADAN SİLİNECEK //
-                db.execSQL("DROP TABLE person");
-                Toast.makeText(MainActivity.this,"Tablo Silindi",Toast.LENGTH_SHORT).show();
                 panel.startAnimation(anim2);
                 txtemail.setVisibility(View.VISIBLE);
                 btnlogin.setVisibility(View.INVISIBLE);
                 btnsign.setVisibility(View.INVISIBLE);
                 btnregister.setVisibility(View.VISIBLE);
-                db = openOrCreateDatabase("login",MODE_PRIVATE,null);
-                db.execSQL("CREATE TABLE IF NOT EXISTS person (username VARCHAR, password VARCHAR, email VARCHAR)");
             }
         });
 
